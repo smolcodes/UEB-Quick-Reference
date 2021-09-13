@@ -1,6 +1,7 @@
 ---
 title: 'Posts'
 layout: 'layouts/feed.njk'
+summary : 'The latest updates on games.'
 pagination: 
   data: collections.blog
   size: 6
@@ -11,7 +12,5 @@ paginationAnchor: '#post-list'
 eleventyNavigation:
   key: posts
   title: Posts
-  order: 5
+  order: 1
 ---
-
-The latest updates on games.

@@ -10,7 +10,7 @@ tags:
 
 [Zombie Planet](https://www.zombie-planet.com/menu) hosts different kinds of Magic the Gathering events throughout the week.
 
-## Events
+### Events
 
 FRIDAY NGHT MAGIC
 
@@ -30,9 +30,8 @@ Some casual mulitplayer fun! Players will be split into 4-5 player pods.
 Capacity limited to 16 people
  
 Entry: $6
-________________
 
-## Location and Contact Information
+### Location and Contact Information
 
 1238 Central Avenue, Albany, NY 12205
 

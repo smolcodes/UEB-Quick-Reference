@@ -1,11 +1,11 @@
 ---
 title: Shelly Studio Bridge
-description: Bridge meetup in Latham near the Albany airport
-date: 2021-09-12
 game: bridge
 location: latham
+description: a chess club in Latham by the Albany airport
+date: 2021-09-12
 tags:
-  ['bridge', 'card+game', 'latham']
+  ['bridge', 'board+game', 'albany', 'latham']
 ---
 
 The Shelly Studio Bridge group plays bridge on Tuesdays at 11:30AM. 

@@ -1,9 +1,9 @@
 ---
 title: 'Bridge'
+summary: 'Places to play Bridge'
 eleventyNavigation:
   title: bridge
   key: Bridge
-  url: /tag/bridge
   order: 2
-permalink: false
+layout: 'layouts/bridgefeed.njk'
 ---

@@ -156,6 +156,31 @@ module.exports = function (eleventyConfig) {
     return filterTagList([...tagSet]);
   });
 
+  // Returns Chess list
+     eleventyConfig.addCollection('chess', collection => {
+      return sortByDisplayOrder(
+        collection.getFilteredByGlob('./src/chess/*.md'));
+    });
+
+      // Returns Scrabble list
+      eleventyConfig.addCollection('scrabble', collection => {
+        return sortByDisplayOrder(
+          collection.getFilteredByGlob('./src/scrabble/*.md'));
+      });
+
+  // Returns Magic list
+  eleventyConfig.addCollection('magic', collection => {
+    return sortByDisplayOrder(
+      collection.getFilteredByGlob('./src/magic/*.md'));
+  });
+
+// Returns Bridge list
+   eleventyConfig.addCollection('bridge', collection => {
+     return sortByDisplayOrder(
+      collection.getFilteredByGlob('./src/bridge/*.md'));
+  });
+  
+
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   eleventyConfig.setUseGitIgnore(false);
 

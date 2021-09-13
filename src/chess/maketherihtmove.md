@@ -10,7 +10,7 @@ tags:
 
 These are tournaments held during the academic school year (September to May) to support young children in developing life skills. 
 
-## Contact Information 
+### Contact Information 
 
 [Make The Right Move official Website](http://www.chesstrm.org/) [Facebook](https://www.facebook.com/RightMoveChess/).
 

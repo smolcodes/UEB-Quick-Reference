@@ -4,14 +4,13 @@ layout: 'layouts/page.njk'
 eleventyNavigation:
   key: home
   title: Home
-  order: 1
 ---
 
 This site is the offshot sequal to the smash hit [518Games](http://518games.com/). Like its predecessor; its aim is to provide information for places to play games in the Capital Region\*. Unlike its predecessor-the site creator enjoys making websites thus instead of being one of the ugliest\* sites on the web, the creator hopes it is nice looking (but not *too* nice). 
 
-The site happily welcomes contributions! If you have a game place you would like to add, any kind of suggestion for the site or are simply bored you can reach the site creator in several ways:
+The site happily welcomes contributions! If you have a game place you would like added and/or any kind of suggestion, you can reach the site creator in several ways:
 
-* [email](rbrittbus@gmail.com)
+* email: rbrittbus@gmail.com
 * [Github Issues](https://github.com/CapReg/capitalregiongames/issues)
 
 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 mb-20">
@@ -23,8 +22,8 @@ The site happily welcomes contributions! If you have a game place you would like
   <div class="bg-gradient-to-r from-yellow-400 to-red-600 rounded-t rounded-b transition-shadow shadow-md hover:shadow-2xl text-center p-12"><p class="text-4xl text-white">Card Games</p></div>
   </a>
 
-   <a href="/tag/rpg+game/">
-  <div class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-t rounded-b transition-shadow shadow-md hover:shadow-2xl text-center p-12"><p class="text-4xl text-white">RPG Games</p></div>
+   <a href="/tag/rpg/">
+  <div class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-t rounded-b transition-shadow shadow-md hover:shadow-2xl text-center p-12"><p class="text-4xl text-white">RPG</p></div>
   </a>
 
    <a href="/tag/table+top/">
@@ -37,7 +36,7 @@ The site happily welcomes contributions! If you have a game place you would like
 ::: callout-blue
 ## Games
 
-[Chess](/tag/chess) [Scrabble](/tag/scrabble) [Magic The Gathering](/tag/magic) [Bridge](/tag/bridge)
+[Chess](/chess) [Scrabble](/scrabble) [Magic The Gathering](/magic) [Bridge](/bridge)
 
 ________
 
@@ -56,7 +55,7 @@ _________
 This site is still rather new and I hope to add a public admin feature (it will use Netlify CMS and contributors need not have knowledge of code or an account) so anyone may contribute to this site. Currently if you would like to assist with this site, you will need to have a [Github account](https://github.com/) and be familiar with [11ty](https://www.11ty.dev/).
 :::
 
-[Colophon](http://localhost:8080/colophon/)
+[Colophon](/colophon/)
 ____________
 
 Footnotes:

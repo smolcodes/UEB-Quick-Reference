@@ -13,3 +13,8 @@ If you see an error or have any suggestions, please feel free to create an issue
 * Obtain permission to take photos of local game places so stock photos wll not be needed (will this strengthen community? Maybe).
 
 > I am looking for assistence on the backend for this site - namely a way to filter posts by both location and game type (maybe that is not that important?) but also for others who would like in to aid in adding Game places until I can properly set up a CMS.
+
+_______
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7df80aa9-4d26-4539-be81-c0688a5d1575/deploy-status)](https://app.netlify.com/sites/capitalregiongames/deploys)
+

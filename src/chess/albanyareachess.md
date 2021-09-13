@@ -10,7 +10,7 @@ tags:
 
 The Albany Area Chess club meets at the Shelly Studio most Wednesdays at 7:30PM for casual chess.
 
-## Location
+### Location
 
 Shelly Studio, 6 British American Blvd, Suite 103, Latham, NY 12110
 
