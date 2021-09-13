@@ -10,8 +10,8 @@ paginationNextText: 'Older posts'
 paginationAnchor: '#post-list'
 eleventyNavigation:
   key: posts
-  title: 📓 Posts
-  order: 1
+  title: Posts
+  order: 5
 ---
 
 The latest updates on games.
