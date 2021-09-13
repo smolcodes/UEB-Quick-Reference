@@ -52,14 +52,6 @@ _________
 {% for tag in collections.tagList %}{% set tagUrl %}/tag/{{ tag | slug }}/{% endset %} <a class="inline-block" href="{{ tagUrl | url }}">{{ tag }}</a>{% endfor %}
 :::
 
-### To do
-
-* Add games that aren't chess
-* Add centers to play games that aren't coffee shops
-* Find a way to scrape data from various game sites to update this site automatically
-* This site could probably be organized better
-* Obtain permission to take photos of local game places so stock photos wll not be needed (will this strengthen community? Maybe).
-
 ::: callout-pink
 This site is still rather new and I hope to add a public admin feature (it will use Netlify CMS and contributors need not have knowledge of code or an account) so anyone may contribute to this site. Currently if you would like to assist with this site, you will need to have a [Github account](https://github.com/) and be familiar with [11ty](https://www.11ty.dev/).
 :::
