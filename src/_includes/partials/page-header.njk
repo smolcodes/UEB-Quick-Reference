@@ -1,0 +1,12 @@
+    <header id="header" class="w-full max-w-full m-0 p-0 bg-gray-700">
+    <div class="pt-10 pb-24 text-lg container mx-auto text-center break-normal text-gray-100">
+    <h1 class="text-gray-50 font-black font-serif text-4xl md:text-5xl">
+      {{ pageHeaderTitle }}
+    </h1>
+    {% if pageHeaderSummary %}
+       <p class="mt-4 text-lg">
+      {{ pageHeaderSummary | safe }}
+      </p>
+    {% endif %}
+    </div>
+</header>

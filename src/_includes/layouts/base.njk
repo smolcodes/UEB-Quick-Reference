@@ -1,0 +1,39 @@
+{% set assetHash = global.random() %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    {% include "partials/meta-info.njk" %}
+    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
+<script async
+  src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+ <link rel="stylesheet" href="/assets/main.bundle.css">
+  <link rel="stylesheet" type="text/css" href="/css/index.css">
+  </head>
+  <body class="{% if eleventyNavigation.key %}{{ eleventyNavigation.key }}{% endif %} font-sans leading-normal tracking-normal overflow-x-hidden w-full ">
+  <a class="sr-only focus:not-sr-only" href="#main"> Skip to main</a>
+            <main class="round-lg font-sans">
+              {% include "partials/navigation.njk" %}
+        <section id="main" class="mx-auto md:w-4/6 bg-gray-50 z-10 overflow-hidden">
+         {% include "partials/page-header.njk" %} 
+         <div class="px-4 md:px-0 max-w-6xl mx-auto  -mt-20 md:-mt-28 mb-32">
+        <div class="mx-0 sm:mx-6">
+        {% block content %}
+        {% endblock %}
+        
+        </div>
+        </div>
+      </section
+</main>
+<!--FitVid-->
+<script src="/assets/main.bundle.js" defer></script>
+<!--Laxy Load-->
+ <script type="module">
+      import Lazyload from "https://cdn.skypack.dev/vanilla-lazyload";
+      const lazyload = new Lazyload();
+    </script>
+  </body>
+</html>
