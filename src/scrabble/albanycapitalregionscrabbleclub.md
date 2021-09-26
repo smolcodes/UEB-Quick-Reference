@@ -17,6 +17,3 @@ Competitive and uses official Scrabble Association rules.
 ### Location and Contact
 
 Phone: [(518) 463-1650](tel:518-463-1650)
-<address>
-New Covenant Presbyterian Church, 916 Western Ave, Albany Ny, 12203.
-</address>
