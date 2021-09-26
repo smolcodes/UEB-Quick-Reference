@@ -6,7 +6,7 @@ eleventyNavigation:
   title: Home
 ---
 
-This site is the offshot sequal to the smash hit [518Games](http://518games.com/). Like its predecessor; its aim is to provide information for places to play games in the Capital Region\*. Unlike its predecessor-the site creator enjoys making websites thus instead of being one of the ugliest\* sites on the web, the creator hopes it is nice looking (but not *too* nice). 
+This site is the offshoot sequal to the smash hit [518Games](http://518games.com/). Like its predecessor; its aim is to provide information for places to play games in the Capital Region\*. Unlike its predecessor-the site creator enjoys making websites thus instead of being one of the ugliest\* sites on the web, the creator hopes it is nice looking (but not *too* nice). 
 
 The site happily welcomes contributions! If you have a game place you would like added and/or any kind of suggestion, you can reach the site creator in several ways:
 
