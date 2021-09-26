@@ -28,4 +28,6 @@ Sunday: 1pm 0-750, 1:10pm Open
 ### Location and Contact
 
 Call or text Diana Lack [(518) 424-8240](tel:518-424-8240)
+<address>
 6 British American BLVD, Suite 103-D, Latham, NY 12110
+</address>
