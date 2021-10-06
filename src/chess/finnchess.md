@@ -20,4 +20,4 @@ Email: [FinnChessClub@gmail.com](mailto:FinnChessClub@gmail.com)
 
 ### Game Play
 
-These tournaments use clocks and recording moves is suggested (although if you don't know algebraic chess notation that's perfectly fine).
+Competitive. These tournaments use clocks and recording moves is suggested (although if you don't know algebraic chess notation that's perfectly fine).
