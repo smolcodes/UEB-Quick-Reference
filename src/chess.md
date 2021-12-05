@@ -11,5 +11,5 @@ layout: 'layouts/chessfeed.njk'
 
 ## Guides
 
-[How to Play Competitive Chess](/how-to-pla-competitive-chess): some chess groups such as [Finn Chess Tournaments](/finnchess) are competitive. This is a brief guide to competition chess. Note: whether the group is casual or competitive shall be stated.
+[How to Play Competitive Chess](/how%20to%20pla%20competitive%20chess/): some chess groups such as [Finn Chess Tournaments](/finnchess) are competitive. This is a brief guide to competition chess. Note: whether the group is casual or competitive shall be stated.
 :::

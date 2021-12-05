@@ -7,19 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     {% include "partials/meta-info.njk" %}
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
-<script async
-  src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
  <link rel="stylesheet" href="/assets/main.bundle.css">
   <link rel="stylesheet" type="text/css" href="/css/index.css">
   </head>
-  <body class="{% if eleventyNavigation.key %}{{ eleventyNavigation.key }}{% endif %} font-sans leading-normal tracking-normal overflow-x-hidden w-full ">
+  <body class="{% if eleventyNavigation.key %}{{ eleventyNavigation.key }}{% endif %} bg-yellow-100 font-serif leading-normal tracking-normal overflow-x-hidden w-full ">
   <a class="sr-only focus:not-sr-only" href="#main"> Skip to main</a>
-            <main class="round-lg font-sans">
+            <main class="round-lg font-serif text-gray-700">
               {% include "partials/navigation.njk" %}
-        <section id="main" class="mx-auto md:w-4/6 bg-gray-50 z-10 overflow-hidden">
+        <section id="main" class="mx-auto md:w-5/6 z-10 overflow-hidden">
          {% include "partials/page-header.njk" %} 
-         <div class="px-4 md:px-0 max-w-6xl mx-auto mt-20 mb-20">
+         <div class="px-4 md:px-0 max-w-6xl mx-auto mb-20">
         <div class="mx-0 sm:mx-6">
         {% block content %}
         {% endblock %}

@@ -1,6 +1,6 @@
 ---
 title: Finn Chess Tournaments
-description: USCF chess club in Latham near the Albany airport
+description: USCF Chess Meet Up in Latham near the Albany airport
 date: 2021-09-11
 game: chess
 location: latham
@@ -20,4 +20,4 @@ Email: [FinnChessClub@gmail.com](mailto:FinnChessClub@gmail.com)
 
 ### Game Play
 
-Competitive. These tournaments use clocks and recording moves is suggested (although if you don't know algebraic chess notation that's perfectly fine).
+Lightly Competitive. These tournaments use clocks and recording moves is suggested.

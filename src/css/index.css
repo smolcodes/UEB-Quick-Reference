@@ -1,10 +1,51 @@
 body {
-  background: url("https://images.unsplash.com/photo-1602968407815-5963b28c66af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80");
+  background-image: url("/images/bg/ep_naturalwhite.png");
+  background-repeat: repeat;
   background-attachment: fixed;
-  background-size: cover;
-  padding:5% 0%;
+  font-family: 'Spectral';
+  font-weight: 400;
   min-height: 100%;
 }
-#header div {
-   background: url("/images/bg/moroccan-flower-dark.png");
+h1:first-child {
+  font-family: 'Cinzel Decorative', cursive;
+}
+.prose h1, .prose h2 {
+  font-family: 'Fondamento', cursive;
+   color: #EF4444;
+}
+.prose {
+  font-weight: 400;
+}
+.prose ul {
+  list-style: none; /* Remove default bullets */
+}
+.prose ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #EF4444; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 0px; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-top: -.5em;
+}
+/* Glyph, by Harry Roberts */
+
+hr {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: 0px;
+  height: 2px;
+  border-top: 2px solid #FBBF24;
+  color: #FBBF24;
+  text-align: center;
+}
+hr:after {
+  content: "§";
+  font-size: 24px;
+  display: inline-block;
+  position: relative;
+  top: -0.9em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: inherit;
 }

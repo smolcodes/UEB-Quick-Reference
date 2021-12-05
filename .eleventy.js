@@ -44,6 +44,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.setLibrary("md", markdownIt(options)
     .use(markdownItFootnote)
     .use(markdownItContainer, 'callout')
+    .use(markdownItContainer, 'callout-events')
     .use(markdownItContainer, 'callout-yellow')
     .use(markdownItContainer, 'callout-blue')
     .use(markdownItContainer, 'callout-pink')
@@ -168,19 +169,12 @@ module.exports = function (eleventyConfig) {
           collection.getFilteredByGlob('./src/scrabble/*.md'));
       });
 
-  // Returns Magic list
-  eleventyConfig.addCollection('magic', collection => {
-    return sortByDisplayOrder(
-      collection.getFilteredByGlob('./src/magic/*.md'));
-  });
-
 // Returns Bridge list
    eleventyConfig.addCollection('bridge', collection => {
      return sortByDisplayOrder(
       collection.getFilteredByGlob('./src/bridge/*.md'));
   });
   
-
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   eleventyConfig.setUseGitIgnore(false);
 
