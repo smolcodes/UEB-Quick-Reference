@@ -15,17 +15,21 @@ Saturday, December 11 at 10.35am. This will be the last tournament of the year! 
 6 British American Blvd, Suite 103, Latham, NY 12110
 from 10:35 a.m. to 6:15 p.m.
 :::
+<div class="flex">
+<img style="width: 40%; margin-right: 20px; box-shadow: none;" src="images/bg/barrel.png">
 
-<img style="width: 40%; float: left; margin-right: 20px; box-shadow: none;" src="images/bg/barrel.png">
+Games are a barrel of fun (this is a *good* pun). This site is the offshoot sequal to the smash hit [518Games](http://518games.com/). Like its predecessor; its aim is to provide information for places to play games in the Capital Region\*. Unlike its predecessor-the site creator enjoys making websites thus instead of being one of the ugliest\* sites on the web, the creator hopes it is nice looking (but not *too* nice). 
+</div>
 
-Games are a barrel of fun (this *is a good pun*). This site is the offshoot sequal to the smash hit [518Games](http://518games.com/). Like its predecessor; its aim is to provide information for places to play games in the Capital Region\*. Unlike its predecessor-the site creator enjoys making websites thus instead of being one of the ugliest\* sites on the web, the creator hopes it is nice looking (but not *too* nice). 
+## Contact Us
 
 The site happily welcomes contributions! If you have a game place you would like added and/or any kind of suggestion, you can reach the site creator in several ways:
 
+* [Fill Out this Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfGqlq9JbQHC3z3zsmtLlGQ9myb5bTTRWYBV9-OdOJ8JoXsPQ/viewform?usp=sf_link)
 * email: rbrittbus@gmail.com
 * [Github Issues](https://github.com/CapReg/capitalregiongames/issues)
 
-::: callout-blue
+::: callout-blue 
 ## Games
 
 [Chess](/chess) [Scrabble](/scrabble) [Bridge](/bridge)

@@ -3,8 +3,11 @@
  {% set pageHeaderImage = imageURL %}
  {% set pageHeaderSummary = summary %}
 {% block content %}
+     <article class="w-full prose lg:prose-xl mx-auto pt-10 pb-10">
+          {{ content | safe }}
+        </article>
          {% for item in collections.bridge %}
-        <article class="w-full prose lg:prose-xl mx-auto pt-10 pb-10 border-b-4 border-gray-200 ">
+        <article class="w-full prose lg:prose-xl mx-auto pt-10 pb-10">
 	       <h2 class="w-full">{{ item.data.title }}</h2>
            <span class="text-gray-800 bg-green-50 p-5 font-serif text-base mb-5"> <b>Location: </b>{{ item.data.location }}</span>
             {{ item.templateContent | safe }}

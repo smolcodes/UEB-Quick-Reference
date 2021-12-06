@@ -25,8 +25,7 @@ h1:first-child {
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 0px; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
-  margin-top: -.5em;
+  margin-top: -.7em;
 }
 /* Glyph, by Harry Roberts */
 

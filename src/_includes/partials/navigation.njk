@@ -1,9 +1,10 @@
 	   {% set navPages = collections.all | eleventyNavigation %}
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-   <nav class="pt-20 round-t-lg text-center content-center text-sm mx-auto md:w-4/6  mx-auto">         <ul class="mt-6 list-reset flex justify-center block">
+   <nav class="pt-20 text-justify w-full max-w-full text-sm mx-auto">     
+       <ul class="mt-6 list-reset flex justify-center block">
          {%- for entry in navPages %}
           <li>
-          <a class="p-2 pb-8 md:p-5 w-full inline-block hover:bg-gray-200 md:border-b-4 border-gray-100 md:hover:border-yellow-500 text-gray-800 {% if entry.url == page.url %}bg-yellow-100 md:border-b-4 border-yellow-500{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
+          <a class="p-2 pb-8 md:p-5 w-full inline-block hover:bg-gray-200 border-b-4 border-gray-100 hover:border-yellow-500 text-gray-800 {% if entry.url == page.url %}bg-yellow-100 border-b-4 border-yellow-500{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
            </li>
                 {%- endfor %}
              </ul>

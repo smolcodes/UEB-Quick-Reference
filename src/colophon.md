@@ -8,17 +8,18 @@ The creator of this site is indebted to [518Games](http://518games.com/) of whic
 
 ## Fonts
 
-* [Bitter](https://fonts.google.com/specimen/Bitter)
-* [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-* [Mogra](https://fonts.google.com/specimen/Mogra)
-* [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono)
+* [Cinzel Decorative](https://fonts.google.com/specimen/Cinzel+Decorative)
+* [Fondamento](https://fonts.google.com/specimen/Fondamento)
+* [Spectral](https://fonts.google.com/specimen/Spectral)
 
 ## Images
 
-* [Chess from Unsplash](https://unsplash.com/photos/7VGzV09YnvA)
+* [Paper Subtle Pattern Background EP Natural White](https://www.toptal.com/designers/subtlepatterns/ep-natural-white/)
+* [Vintage Barrel](https://graphicgoods.net/downloads/free-vintage-illustrations-vol-2/)
 
 ## Resources
 
+* [Internetting is Hard](https://www.internetingishard.com/)
 * [Learn Eleventy From Scratch](https://piccalil.li/course/learn-eleventy-from-scratch/)
 * [Tatiana Mac's Beginner's Guide to Eleventy Part 2](https://tatianamac.com/posts/beginner-eleventy-tutorial-partii/)
 * [A Complete Guide to FlexBox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
@@ -37,7 +38,7 @@ The creator of this site is indebted to [518Games](http://518games.com/) of whic
 * [Responsively](https://responsively.app/) for testing the responsivenes of a site. I also use an Ipad, ThinkPad and a Google Pixel
 * [Wave](https://wave.webaim.org/) for visual accessibility. 
 * [NVDA](https://www.nvaccess.org/) for accessibility for low vision and blind.
-* I try to make sure the site looks and works decently accross Chrome, Firefox, Edge and Safari.
+* I try to make sure the site looks and works decently accross Chrome, Firefox, Edge and Safari although this site does not support IE.
 
 ## Build 
 
