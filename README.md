@@ -3,6 +3,18 @@ This repository is the backbone of Capital Region Games, a site for those who en
 All contributions are happily welcome! You can add a new game place by making a pull request. 
 
 If you see an error or have any suggestions, please feel free to create an issue or email me at: rbrittbus@gmail.com. 
+
+_____________
+12/05/2021
+
+ - I have done one brilliant thing! I have added an events section on the front page
+ - Deleted the Magic page. Will most likely delete the Bridge at some point as well. Scrabble and Chess is all the world needs. 
+ - Finally got to the redesign (it is heavily inspired by [Chess World](http://www.edochess.ca/batgirl/TopTen.html)). It is also inspired by this interesting article about [rubrication](https://www.gwern.net/Red). This site was never intented to have the original design. It was so the site could be put up quickly
+ - I am spending less time on this site than I'd hoped. So far the content creation is not going well. Perhaps I should consider queuing. I will also add discord support because it is an easy commenting system.
+ - I have finally looked up some artists to commission. 
+ - The CMS will be Netlify as it allows Google and Github login.
+
+
 _____________
 10/06/2021
 
