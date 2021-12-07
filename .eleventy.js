@@ -10,12 +10,20 @@ const sharp = require("sharp");
 const dateFilter = require('./src/filters/date-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
+// Footnotes
+const footnotes = require('eleventy-plugin-footnotes');
+
+// Embed Media
+const embeds = require("eleventy-plugin-embed-everything");
+
 // Create a helpful production flag
 const isProduction = process.env.NODE_ENV === 'production';
 
 const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(embeds)
+  eleventyConfig.addPlugin(footnotes)
     //html minifier
     eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
       // Eleventy 1.0+: use this.inputPath and this.outputPath instead
@@ -182,7 +190,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
    eleventyConfig.addPassthroughCopy('src/admin');
 
-  eleventyConfig.setTemplateFormats(["jpg", "png", "webp", "md", "njk", "html"]);
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',

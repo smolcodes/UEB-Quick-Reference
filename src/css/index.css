@@ -5,6 +5,12 @@ body {
   font-family: 'Spectral';
   font-weight: 400;
   min-height: 100%;
+  counter-reset: footnotes;
+}
+[role="doc-noteref"]::after {
+  counter-increment: footnotes;
+  content: '[' counter(footnotes) ']';
+  margin-left: 5px;
 }
 h1:first-child {
   font-family: 'Cinzel Decorative', cursive;

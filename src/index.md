@@ -9,16 +9,16 @@ eleventyNavigation:
 ::: callout-events
 <span class="bg-red-300 text-gray-800 p-2">Events 😊</span>
 
-### [Finn Action](finnchess/)
+## [Finn Action](finnchess/)
 Saturday, December 11 at 10.35am. This will be the last tournament of the year! Come and join us
 
 6 British American Blvd, Suite 103, Latham, NY 12110
 from 10:35 a.m. to 6:15 p.m.
 :::
 <div class="flex">
-<img style="width: 40%; margin-right: 20px; box-shadow: none;" src="images/bg/barrel.png">
+<img style="min-width: 50%; margin-right: 20px; box-shadow: none;" src="images/barrel.png" alt="this is a barrel. It is here so I can make a bad barrel pun">
 
-Games are a barrel of fun (this is a *good* pun). This site is the offshoot sequal to the smash hit [518Games](http://518games.com/). Like its predecessor; its aim is to provide information for places to play games in the Capital Region\*. Unlike its predecessor-the site creator enjoys making websites thus instead of being one of the ugliest\* sites on the web, the creator hopes it is nice looking (but not *too* nice). 
+Games are a barrel of fun (this is a *good* pun). This site is the offshoot sequal to the smash hit [518Games](http://518games.com/). Like its predecessor; its aim is to provide information for places to play games in the {% footnoteref "Capital Region"," Information should be social media agnostic (not hidden behind Facebook, Reddit and the like); this is partially why the creator of this site believes sites such as this are important" %}Capital Region{% endfootnoteref %}. Unlike its predecessor-the site creator enjoys making websites thus instead of being one of the {% footnoteref "ugliest","The original 518Games site, while not being the most flattering certainly is no where near the ugliness that is the original [Space Jam](https://www.spacejam.com/1996/) site." %}ugliest{% endfootnoteref %}. sites on the web, the creator hopes it is nice looking (but not *too* nice). 
 </div>
 
 ## Contact Us
@@ -54,7 +54,5 @@ This site is still rather new and I hope to add a public admin feature (it will 
 [Colophon](/colophon/)
 ____________
 
-Footnotes:
+{% footnotes %}
 
-* Information should be social media agnostic (not hidden behind Facebook, Reddit and the like); this is partially why the creator of this site believes sites such as this are important
-* The original 518Games site, while not being the most flattering certainly is no where near the ugliness that is the original [Space Jam](https://www.spacejam.com/1996/) site.

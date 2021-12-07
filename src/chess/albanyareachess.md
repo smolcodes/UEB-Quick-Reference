@@ -2,7 +2,6 @@
 title: Albany Area Chess
 description: a chess club in Latham by the Albany airport
 date: 2021-09-12
-game: chess
 location: latham
 tags:
   ['chess', 'board+game', 'albany', 'latham']

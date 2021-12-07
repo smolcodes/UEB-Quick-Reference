@@ -2,7 +2,6 @@
 title: Finn Chess Tournaments
 description: USCF Chess Meet Up in Latham near the Albany airport
 date: 2021-09-11
-game: chess
 location: latham
 tags:
   ['chess', 'board+game', 'albany', 'latham']

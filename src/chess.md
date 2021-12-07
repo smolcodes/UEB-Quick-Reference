@@ -1,5 +1,6 @@
 ---
 title: 'Chess'
+summary: 'Places to play Chess'
 eleventyNavigation:
   title: chess
   key: Chess

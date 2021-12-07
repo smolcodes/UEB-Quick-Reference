@@ -38,7 +38,15 @@ The creator of this site is indebted to [518Games](http://518games.com/) of whic
 * [Responsively](https://responsively.app/) for testing the responsivenes of a site. I also use an Ipad, ThinkPad and a Google Pixel
 * [Wave](https://wave.webaim.org/) for visual accessibility. 
 * [NVDA](https://www.nvaccess.org/) for accessibility for low vision and blind.
+* JAWS 
 * I try to make sure the site looks and works decently accross Chrome, Firefox, Edge and Safari although this site does not support IE.
+
+## Plugins
+
+* [Footnotes](https://github.com/KittyGiraudel/eleventy-plugin-footnotes)
+* [Embed Everything](https://gfscott.com/embed-everything/)
+* [Markdown-It](https://github.com/markdown-it/markdown-it)
+* [Eleventy Sharp](https://www.npmjs.com/package/eleventy-plugin-sharp?activeTab=readme)
 
 ## Build 
 

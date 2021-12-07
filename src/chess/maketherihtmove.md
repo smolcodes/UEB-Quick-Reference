@@ -1,7 +1,6 @@
 ---
 title: Make the Right Move Tournaments
 description: "scholastic chess tournaments ran through the academic school year in Albany"
-game: chess
 location: albany
 date: 2021-09-11
 tags:

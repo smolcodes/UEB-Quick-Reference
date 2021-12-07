@@ -42,10 +42,10 @@ module.exports = {
           a: {
             backgroundColor: '#FFFBEB',
             fontWeight: '700',
-            color: '#6B7280',
+            color: '#1F2937',
             transition: '1s',
             borderRadius: '5px',
-            padding:'3px 6px',
+            padding:'3px 3px',
             '&:hover': {
             background: '#FEF2F2',
             color: '#EF4444',
