@@ -1,7 +1,9 @@
 @font-face {
   font-family: "simbraille";
-  src: url("https://github.com/smolcodes/UEB-Quick-Reference/blob/main/src/css/SIMBRL.TTF") format("ttf");
-  }
+  src: url("/css/SIMBRL.TTF") format("ttf");
+  src: url("/css/SimBraille.woff") format("woff"),
+url("/css/SimBraille.woff2") format("woff2");
+}
 body {
   font-family: 'Merriweather', serif;
   font-weight: 400;
