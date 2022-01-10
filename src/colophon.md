@@ -3,7 +3,7 @@ title: 'Colophon'
 eleventyNavigation:
   title: Colophon
   key: Colophon
-  order: 2
+  order: 3
 toc: 1
 layout: 'layouts/post.njk'
 permalink: '/colophon/index.html'

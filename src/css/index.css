@@ -1,6 +1,6 @@
 @font-face {
   font-family: "simbraille";
-  src: url("src/css/SIMBRL.TTF") format("ttf");
+  src: url("https://github.com/smolcodes/UEB-Quick-Reference/blob/main/src/css/SIMBRL.TTF") format("ttf");
   }
 body {
   font-family: 'Merriweather', serif;
@@ -14,7 +14,7 @@ body {
   margin-left: 5px;
 }
 .braille {
-  font-family: 'simbraille';
+  font-family: "simbraille";
   font-size: 26px;
   color: black;
 }
