@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Fondamento:ital@1&family=Palanquin:wght@100&family=Spectral:wght@200;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&family=Merriweather:ital,wght@0,300;1,300&family=Palanquin:wght@100&display=swap');
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
- .prose:nth-of-type(even) {
-   @apply bg-indigo-100 p-10;
+body,html {
+  @apply bg-slate-300;
+}
+ .prose {
+   @apply rounded-md shadow-xl bg-slate-50 mx-auto mb-10 p-10;
  }
   .callout {
     @apply border-l-4 border-gray-400 px-8 py-4 mb-4 rounded-lg bg-gray-100 shadow-xl;
@@ -27,7 +30,7 @@
     @apply border-l-4 border-green-300 px-8 py-4 mb-4 rounded-lg bg-green-50 shadow-xl;
   }
  .callout-gray {
-    @apply border-l-4 border-gray-700 px-8 py-4 mb-4 rounded-lg bg-gray-900 shadow-xl;
+    @apply border-l-4 border-gray-600 px-8 py-4 mb-4 rounded-lg bg-gray-900 shadow-xl;
   }
   .warning {
     @apply border-l-4 border-red-500 px-8 py-4 mb-4 rounded-lg bg-red-100 text-red-500 shadow-xl;

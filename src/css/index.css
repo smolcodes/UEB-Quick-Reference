@@ -1,37 +1,56 @@
+@font-face {
+  font-family: "simbraille";
+  src: url("src/css/SIMBRL.TTF") format("ttf");
+  }
 body {
-  background-image: url("/images/bg/ep_naturalwhite.png");
-  background-repeat: repeat;
-  background-attachment: fixed;
-  font-family: 'Spectral';
+  font-family: 'Merriweather', serif;
   font-weight: 400;
-  min-height: 100%;
+  font-size: 18px;
   counter-reset: footnotes;
-}
+}  
 [role="doc-noteref"]::after {
   counter-increment: footnotes;
   content: '[' counter(footnotes) ']';
   margin-left: 5px;
 }
+.braille {
+  font-family: 'simbraille';
+  font-size: 26px;
+  color: black;
+}
+p a {
+  color: #1F2937;
+  text-decoration: underline;
+  font-weight: 500;
+  background-color: #FFFBEB;
+  border-radius: 3px;
+  padding: 1px;
+}
+p a:hover {
+  background-color: #FBBF24;
+  color: black;
+}
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
 h1:first-child {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  text-align: center;
 }
 .prose h1, .prose h2 {
-  font-family: 'Fondamento', cursive;
-   color: #EF4444;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
 }
-.prose {
-  font-weight: 400;
-}
-.prose ul {
-  list-style: none; /* Remove default bullets */
-}
-.prose ul li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #EF4444; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 0px; /* Also needed for space (tweak if needed) */
-  margin-top: -.7em;
+.prose a:hover {
+  background: #fca5a5;
+  border: 2px solid #64748b; 
 }
 /* Glyph, by Harry Roberts */
 

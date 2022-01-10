@@ -1,10 +1,23 @@
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
-const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const slugify = require("slugify");
-const Image = require("@11ty/eleventy-img");
-const sharp = require("sharp");
+const pluginTOC = require('eleventy-plugin-toc')
+const markdownIt = require('markdown-it')
+const markdownItAnchor = require('markdown-it-anchor')
+
+const mdOptions = {
+  html: true,
+  breaks: true,
+  linkify: true,
+  typographer: true
+}
+const mdAnchorOpts = {
+  permalink: true,
+  permalinkClass: 'anchor-link',
+  permalinkSymbol: '#',
+  level: [1, 2, 3, 4]
+}
 
 // Filters
 const dateFilter = require('./src/filters/date-filter.js');
@@ -51,6 +64,7 @@ module.exports = function (eleventyConfig) {
     };
     eleventyConfig.setLibrary("md", markdownIt(options)
     .use(markdownItFootnote)
+    .use(markdownItAnchor, mdAnchorOpts)
     .use(markdownItContainer, 'callout')
     .use(markdownItContainer, 'callout-events')
     .use(markdownItContainer, 'callout-yellow')
@@ -59,78 +73,26 @@ module.exports = function (eleventyConfig) {
     .use(markdownItContainer, 'callout-purple')
     .use(markdownItContainer, 'callout-green')
     .use(markdownItContainer, 'warning')
+    .use(markdownItContainer, 'braille')
+  
     );
-	 //shortcodes
-   eleventyConfig.addNunjucksAsyncShortcode("Image", async (src, alt) => {
-    if (!alt) {
-      throw new Error(`Missing \`alt\` on myImage from: ${src}`);
-    }
-
-    let stats = await Image(src, {
-      widths: [25, 320, 640, 960, 1200, 1800, 2400],
-      formats: ["jpeg", "webp"],
-      urlPath: "/images/",
-      outputDir: "./dist/images/",
-    });
-
-    let lowestSrc = stats["jpeg"][0];
-
-    const placeholder = await sharp(lowestSrc.outputPath)
-      .resize({ fit: sharp.fit.inside })
-      .blur()
-      .toBuffer();
-
-    const base64Placeholder = `data:image/png;base64,${placeholder.toString(
-      "base64"
-    )}`;
-
-    const srcset = Object.keys(stats).reduce(
-      (acc, format) => ({
-        ...acc,
-        [format]: stats[format].reduce(
-          (_acc, curr) => `${_acc} ${curr.srcset} ,`,
-          ""
-        ),
-      })
-    );
-
-    const source = `<source type="image/webp" data-srcset="${srcset["webp"]}" >`;
-
-    const img = `<img
-      class="lazy"
-      alt="${alt}"
-      src="${base64Placeholder}"
-      data-src="${lowestSrc.url}"
-      data-sizes='(min-width: 1024px) 1024px, 100vw'
-      data-srcset="${srcset["jpeg"]}"
-      width="${lowestSrc.width}"
-      height="${lowestSrc.height}">`;
-
-    return `<div class="image-wrapper"><picture> ${source} ${img} </picture></div>`;
-  });
-
+  eleventyConfig.addPlugin(pluginTOC)
   //data deep merge
   eleventyConfig.setDataDeepMerge(true);
 
   //syntax highlight
   eleventyConfig.addPlugin(syntaxHighlight);
-
-  eleventyConfig.setFrontMatterParsingOptions({
-    excerpt: true,
-    excerpt_separator: "<!-- excerpt -->",
-  });
   // Add filters
 
   eleventyConfig.addFilter('dateFilter', dateFilter);
   eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
 
   // Plugins
-  eleventyConfig.addPlugin(rssPlugin);
   eleventyConfig.addPlugin(pluginNavigation);
 
-  // Returns a collection of blog posts in reverse date order
+  // Returns a collection of blog posts
   eleventyConfig.addCollection('blog', collection => {
-    return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
+    return [...collection.getFilteredByGlob('./src/posts/*.md')];
   });
 
     // Get the first `n` elements of a collection.
@@ -165,23 +127,11 @@ module.exports = function (eleventyConfig) {
     return filterTagList([...tagSet]);
   });
 
-  // Returns Chess list
-     eleventyConfig.addCollection('chess', collection => {
-      return sortByDisplayOrder(
-        collection.getFilteredByGlob('./src/chess/*.md'));
-    });
-
-      // Returns Scrabble list
-      eleventyConfig.addCollection('scrabble', collection => {
-        return sortByDisplayOrder(
-          collection.getFilteredByGlob('./src/scrabble/*.md'));
-      });
-
-// Returns Bridge list
-   eleventyConfig.addCollection('bridge', collection => {
-     return sortByDisplayOrder(
-      collection.getFilteredByGlob('./src/bridge/*.md'));
-  });
+  // Returns grammar list
+     eleventyConfig.addCollection('grammar', collection => {
+      return collection.getFilteredByGlob('./src/grammar/*.md')
+      .sort((a, b) => b.data.order - a.data.order);
+     });
   
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   eleventyConfig.setUseGitIgnore(false);

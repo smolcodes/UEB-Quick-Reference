@@ -10,18 +10,14 @@
  <link rel="stylesheet" href="/assets/main.bundle.css">
   <link rel="stylesheet" type="text/css" href="/css/index.css">
   </head>
-  <body class="{% if eleventyNavigation.key %}{{ eleventyNavigation.key }}{% endif %} bg-yellow-100 font-serif leading-normal tracking-normal overflow-x-hidden w-full ">
+  <body class="{% if eleventyNavigation.key %}{{ eleventyNavigation.key }}{% endif %} bg-gradient-to-br from-slate-100 via-slate-200 to-blue-400 min-h-screen pb-20 font-serif leading-normal tracking-normal overflow-x-hidden w-full ">
   <a class="sr-only focus:not-sr-only" href="#main"> Skip to main</a>
-            <main class="font-serif text-gray-700">
+            <main class="font-sans text-gray-700">
               {% include "partials/navigation.njk" %}
-        <section id="main" class="mx-auto z-10 overflow-hidden">
+        <section id="main" class="mx-auto container">
          {% include "partials/page-header.njk" %} 
-         <div class="px-4 md:px-0 max-w-6xl mx-auto mb-20">
-        <div class="mx-0 sm:mx-6">
         {% block content %}
         {% endblock %}
-        </div>
-        </div>
       </section
       </main>
 <!--FitVid-->

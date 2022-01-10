@@ -21,7 +21,6 @@ module.exports = {
             color: '#EF4444',
             fontWeight: '700',
             fontFamily: 'Georgia',
-            fontStyle: 'italic',
           },
           hr: {
             borderColor: '#FBBF24',
@@ -43,7 +42,6 @@ module.exports = {
             backgroundColor: '#FFFBEB',
             fontWeight: '700',
             color: '#1F2937',
-            transition: '1s',
             borderRadius: '5px',
             padding:'3px 3px',
             '&:hover': {

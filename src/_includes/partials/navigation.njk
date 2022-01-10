@@ -3,8 +3,8 @@
    <nav class="pt-20 text-justify w-full max-w-full text-sm mx-auto">     
        <ul class="mt-6 list-reset flex justify-center block">
          {%- for entry in navPages %}
-          <li>
-          <a class="p-2 pb-8 md:p-5 w-full inline-block hover:bg-gray-200 border-b-4 border-gray-100 hover:border-yellow-500 text-gray-800 {% if entry.url == page.url %}bg-yellow-100 border-b-4 border-yellow-500{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
+          <li class="mr-10">
+          <a class="p-4 rounded-full w-full inline-block hover:bg-yellow-100 border-solid border-4 border-slate-400 hover:border-yellow-500 text-gray-800 {% if entry.url == page.url %} border-b-4 border-red-400{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
            </li>
                 {%- endfor %}
              </ul>
