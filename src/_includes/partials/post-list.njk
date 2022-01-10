@@ -1,5 +1,5 @@
      <section id="postlist" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
-        {% for item in postListItems | reverse %}
+        {% for item in postListItems %}
         <article class="flex justify-center">
 				  <a  id="{{ item.data.title }}" href="{{ item.url }}">
         	<div class="bg-yellow-50 rounded-m overflow-hidden shadow-md hover:shadow-2xl border-4 border-transparent hover:border-yellow-500 pb-5">

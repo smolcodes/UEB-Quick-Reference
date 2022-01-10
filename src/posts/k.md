@@ -1,6 +1,6 @@
 ---
 title: 'k'
-description: 'k kowledge'
+description: 'k knowledge'
 date: 2021-01-09
 tags:
   ['alphabetic wordsign']
