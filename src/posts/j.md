@@ -1,7 +1,7 @@
 ---
 title: 'j'
 description: 'j just'
-date: 2021-01-09
+date: 2021-01-10
 tags:
   ['alphabetic wordsign']
 ---
