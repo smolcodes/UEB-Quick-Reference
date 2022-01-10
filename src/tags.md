@@ -5,6 +5,6 @@ pagination:
   data: collections
   size: 1
   alias: tag
-  filter: ['all']
+  filter: ['all', 'alphabeticwordsigns','strongwordsigns','grammar']
 permalink: '/tag/{{ tag | slug }}/'
 ---
