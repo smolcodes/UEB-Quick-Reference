@@ -5,7 +5,7 @@ eleventyNavigation:
   key: Colophon
   order: 3
 toc: 1
-layout: 'layouts/post.njk'
+layout: 'layouts/page.njk'
 permalink: '/colophon/index.html'
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'g'
 description: 'g go'
-date: 2021-01-07
+order: 7
 tags:
   ['alphabetic wordsign']
 ---

@@ -22,6 +22,28 @@
       </main>
 <!--FitVid-->
 <script src="/assets/main.bundle.js" defer></script>
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, txtValue, article, section, a, i, h2;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  section = document.getElementById("postlist");
+  article = section.getElementsByTagName('article');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < article.length; i++) {
+    a = article[i].getElementsByTagName('a')[0];
+    p = article[i].getElementsByTagName ('p')[0];
+    txtValue = p.textContent || p.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      article[i].style.display = "";
+    } else {
+      article[i].style.display = "none";
+    }
+  }
+}
+</script>
 <!--Laxy Load-->
  <script type="module">
       import Lazyload from "https://cdn.skypack.dev/vanilla-lazyload";

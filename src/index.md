@@ -2,13 +2,6 @@
 title: 'Unified English Braille'
 layout: 'layouts/feed.njk'
 summary : 'A Quick Reference for Unified English Braille'
-pagination: 
-  data: collections.blog
-  size: 200
-permalink: '/{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
-paginationPrevText: 'Next Page'
-paginationNextText: 'Previous'
-paginationAnchor: '#post-list'
 eleventyNavigation:
   key: contractions
   title: Contractions

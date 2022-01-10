@@ -20,6 +20,9 @@ body {
   font-size: 26px;
   color: black;
 }
+.brailletitle {
+  font-family: "simbraille";
+}
 p a {
   color: #1F2937;
   text-decoration: underline;

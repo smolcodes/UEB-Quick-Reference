@@ -1,16 +1,17 @@
 {% extends "layouts/base.njk" %}
-{% set pageHeaderTitle = title %}
-{% set pageDescription = description %}
 {# Render post date and any tags that this post has been filed under #}
-{% set pageHeaderSummary %}
+{% block content %}
+  <header id="header" class="w-full max-w-full m-0 p-0">
+    <div class="pt-10 pb-10 text-lg container mx-auto text-center break-normal">
+<h1 class="text-4xl md:text-5xl"><b class="brailletitle text-red-500"> {{ title }}</b> {{ description }}</h1>
   {% if tags %}
     <span class="sr-only" id="tags-desc">categorized as</span>
       {% for tag in tags %}
           <a class="inline-block m-1 bg-yellow-50 font-bold text-lg text-yellow-700 p-1 hover:bg-blue-700 hover:text-gray-50" href="/tag/{{ tag | slug }}/">{{ tag | replace(' ', ' ') | capitalize }}</a>
       {% endfor %}
   {% endif %}
-{% endset %}
-{% block content %}
+  </div>
+  </header>
     <article class="prose lg:prose-xl">
     {% include "partials/toc.njk" %}
       {{ content | safe }}

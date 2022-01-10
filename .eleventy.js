@@ -133,6 +133,17 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => b.data.order - a.data.order);
      });
   
+   // Returns strong word signs list
+     eleventyConfig.addCollection('strongwordsigns', collection => {
+      return collection.getFilteredByGlob('./src/strongwordsigns/*.md')
+      .sort((a, b) => b.data.order - a.data.order);
+     });
+  
+     eleventyConfig.addCollection('alphabeticwordsigns', collection => {
+      return collection.getFilteredByGlob('./src/alphabeticwordsigns/*.md')
+      .sort((a, b) => b.data.order - a.data.order);
+     });
+  
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   eleventyConfig.setUseGitIgnore(false);
 

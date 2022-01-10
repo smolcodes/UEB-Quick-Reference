@@ -4,7 +4,8 @@
 {# Render post date and any tags that this post has been filed under #}
 {% set pageHeaderSummary = summary %}
 {% block content %}
-    <article class="lg:prose-xl mx-auto">
+     <article class="prose lg:prose-xl">
+     {% include "partials/toc.njk" %}
       {{ content | safe }}
       </article>
 {% endblock %}

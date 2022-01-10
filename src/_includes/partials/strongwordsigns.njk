@@ -1,0 +1,17 @@
+        {% for item in collections.strongwordsigns %}
+        <article class="flex justify-center">
+				  <a href="{{ item.url }}">
+        	<div class="bg-blue-50 rounded-m overflow-hidden shadow-md hover:shadow-2xl border-4 border-transparent hover:border-yellow-500 pb-5">
+            <div class="px-4 py-4">
+            <h2 class="text-2xl"><b>Contraction</b> <b class="braille">{{ item.data.title }}</b></h2>
+            <p class="text-lg"><b>Meaning</b> {{ item.data.description }}</p>
+          <p class="text-lg"><b>category</b>
+      {% for tag in item.data.tags %}
+         {{ tag | replace(' ', ' ') | capitalize }}
+      {% endfor %}
+      </p>
+         </div>
+       </div>
+             </a>
+      </article>
+        {% endfor %}
