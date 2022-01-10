@@ -5,13 +5,13 @@
 {% set postListItems = pagination.items %}
 {# If this is a tag, grab those items instead as one large collection #}
 {% if tag %}
-  {% set postListItems = collections[tag] | reverse %}
+  {% set postListItems = collections[tag] | reverseco %}
   {% set pageHeaderTitle = 'Contractions filed under "' + tag +'"' %}
 {% endif %}
 {% block content %}
    {{ content | safe }}
     {% include "partials/search.njk" %}
-         <section id="postlist" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+   <section id="postlist" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
     {% include "partials/alphabeticwordsigns.njk" %}
     {% include "partials/strongwordsigns.njk" %}
     </section>
