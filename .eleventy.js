@@ -89,34 +89,22 @@ module.exports = function (eleventyConfig) {
 
   // Plugins
   eleventyConfig.addPlugin(pluginNavigation);
+ // Get the first `n` elements of a collection.
+ eleventyConfig.addFilter("head", (array, n) => {
+  if(!Array.isArray(array) || array.length === 0) {
+    return [];
+  }
+  if( n < 0 ) {
+    return array.slice(n);
+  }
 
-    // Get the first `n` elements of a collection.
-    eleventyConfig.addFilter("head", (array, n) => {
-      if(!Array.isArray(array) || array.length === 0) {
-        return [];
-      }
-      if( n < 0 ) {
-        return array.slice(n);
-      }
-  
-      return array.slice(0, n);
-    });
-  
-    // Return the smallest number argument
-    eleventyConfig.addFilter("min", (...numbers) => {
-      return Math.min.apply(null, numbers);
-    });
+  return array.slice(0, n);
+});
 
-  eleventyConfig.addFilter("filterTagList", filterTagList)
-// Tag Cloud
-  eleventyConfig.addCollection('tagList', collection => {
-    let tagSet = new Set();
-    collection.getAll().forEach(item => {
-      (item.data.tags || []).forEach(tag => tagSet.add(tag));
-    });
-
-    return filterTagList([...tagSet]);
-  });
+// Return the smallest number argument
+eleventyConfig.addFilter("min", (...numbers) => {
+  return Math.min.apply(null, numbers);
+});
 
   // Returns grammar list
      eleventyConfig.addCollection('grammar', collection => {
