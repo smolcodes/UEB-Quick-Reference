@@ -3,7 +3,7 @@ title: '*'
 description: 'ch child'
 order: 1
 tags:
-  ['strong word sign', 'strong group signs']
+  ['strong word sign', 'strong group sign']
 ---
 
 This symbol is both a strong wordsign and a strong group sign. As a strong wod sign, it represents the word **child**, as a strong groupsign it represents the letters **ch**
@@ -19,5 +19,5 @@ here is a \*
 
 *this chicken is cute*
 ::: braille
-this \* is cute
+this \*en is cute
 :::

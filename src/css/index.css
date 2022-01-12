@@ -4,6 +4,10 @@
   src: url("/css/SimBraille.woff") format("woff"),
 url("/css/SimBraille.woff2") format("woff2");
 }
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
 body {
   font-family: 'Merriweather', serif;
   font-weight: 400;

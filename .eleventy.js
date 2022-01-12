@@ -90,11 +90,6 @@ module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(pluginNavigation);
 
-  // Returns a collection of blog posts
-  eleventyConfig.addCollection('blog', collection => {
-    return [...collection.getFilteredByGlob('./src/posts/*.md')];
-  });
-
     // Get the first `n` elements of a collection.
     eleventyConfig.addFilter("head", (array, n) => {
       if(!Array.isArray(array) || array.length === 0) {
@@ -111,10 +106,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("min", (...numbers) => {
       return Math.min.apply(null, numbers);
     });
-  
-    function filterTagList(tags) {
-      return (tags || []).filter(tag => ["all", "nav", "post", "posts", "alphabeticwordsigns","strongwordsigns"].indexOf(tag) === -1);
-    }
 
   eleventyConfig.addFilter("filterTagList", filterTagList)
 // Tag Cloud
@@ -146,10 +137,8 @@ module.exports = function (eleventyConfig) {
   
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   eleventyConfig.setUseGitIgnore(false);
-
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/css");
-   eleventyConfig.addPassthroughCopy('src/admin');
 
   return {
     markdownTemplateEngine: 'njk',

@@ -36,8 +36,7 @@ _________________
 ```css
 @font-face {
   font-family: "simbraille"; // name of the font
-  src: url("src/css/SIMBRL.TTF") format("ttf"); //the text before simbrl.ttf is 
-  //the location of the font yours might differ
+  src: url("src/css/SIMBRL.TTF") format("ttf"); //the text before simbrl.ttf //is the location of the font yours might differ
   }
 .braille {
   font-family: 'simbraille'; //font
@@ -53,6 +52,22 @@ In your html file, wrap any text you want to show in braille in a braille class
     hellow world
     </div>
 ```
+::: callout-pink
+**IMPORTANT**
+
+To ensure the font displays across different browsers, you should convert your SimBraille font into multiple different [formats](https://transfonter.org/) and include them in your CSS. Below is an example:
+
+```css
+@font-face {
+  font-family: "simbraille";
+  src: url("/css/SIMBRL.TTF") format("ttf");
+  src: url("/css/SimBraille.woff") format("woff"),
+url("/css/SimBraille.woff2") format("woff2");
+}
+```
+:::
+
+______________
 
 ## Resources for the Web
 
@@ -64,6 +79,8 @@ In your html file, wrap any text you want to show in braille in a braille class
 * [Brad Traversy's Git and Github for Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
 * [Atlassian Bitbucket Guide to Git and Version Control](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [CSS Grid Guide](https://learncssgrid.com/)
+
+____________
 
 ## Site Creation
 
@@ -87,6 +104,8 @@ In your html file, wrap any text you want to show in braille in a braille class
 
 ### Plugins
 
+* [Table of Contents](https://github.com/jdsteinbach/eleventy-plugin-toc)
+* [HTML minifier](https://github.com/kangax/html-minifier)
 * [Footnotes](https://github.com/KittyGiraudel/eleventy-plugin-footnotes)
 * [Markdown-It](https://github.com/markdown-it/markdown-it)
 
