@@ -7,7 +7,7 @@
   {% if tags %}
     <span class="sr-only" id="tags-desc">categorized as</span>
       {% for tag in tags %}
-          <a class="inline-block m-1 bg-yellow-50 font-bold text-lg text-yellow-700 p-1 hover:bg-blue-700 hover:text-gray-50" href="/tag/{{ tag | slug }}/">{{ tag | replace(' ', ' ') | capitalize }}</a>
+          <a class="inline-block m-1 bg-yellow-50 font-bold text-lg text-yellow-700 p-1 hover:bg-blue-700 hover:text-gray-50" href="/tags/{{ tag | slug }}/">{{ tag | replace(' ', ' ') | capitalize }}</a>
       {% endfor %}
   {% endif %}
   </div>

@@ -4,5 +4,5 @@ pagination:
   size: 1
   alias: tag
 layout: layouts/taglist.njk
-permalink: /tags/{{ tag }}/
+permalink: /tags/{{ tag | slug }}/
 ---

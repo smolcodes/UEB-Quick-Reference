@@ -17,6 +17,7 @@
         <section id="main" class="mx-auto container">
          {% include "partials/page-header.njk" %} 
         {% block content %}
+        {{ content | safe }}
         {% endblock %}
       </section
       </main>
