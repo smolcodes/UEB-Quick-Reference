@@ -122,6 +122,26 @@ eleventyConfig.addFilter("min", (...numbers) => {
       return collection.getFilteredByGlob('./src/alphabeticwordsigns/*.md')
       .sort((a, b) => b.data.order - a.data.order);
      });
+
+     eleventyConfig.addCollection('strongcontractions', collection => {
+      return collection.getFilteredByGlob('./src/strongcontractions/*.md')
+      .sort((a, b) => b.data.order - a.data.order);
+     });
+
+     eleventyConfig.addCollection('stronggroupsigns', collection => {
+      return collection.getFilteredByGlob('./src/stronggroupsigns/*.md')
+      .sort((a, b) => b.data.order - a.data.order);
+     });
+
+     eleventyConfig.addCollection('initiallettercontractions', collection => {
+      return collection.getFilteredByGlob('./src/initiallettercontractions/*.md')
+      .sort((a, b) => b.data.order - a.data.order);
+     });
+
+     eleventyConfig.addCollection('finallettergroupsigns', collection => {
+      return collection.getFilteredByGlob('./src/finallettergroupsigns/*.md')
+      .sort((a, b) => b.data.order - a.data.order);
+     });
   
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   eleventyConfig.setUseGitIgnore(false);

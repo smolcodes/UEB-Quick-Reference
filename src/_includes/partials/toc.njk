@@ -1,7 +1,7 @@
 {% set toclist = content | toc | safe %}
 {% if toclist.length > 23 %}
   <aside class="post-toc">
-    <div id="toc-list" class="post-toc__list" aria-hidden="true">
+    <div id="toc-list" class="post-toc__list callout" aria-hidden="true">
     <h12> Table of Contents </h2>
       {{ toclist }}
     </div>
