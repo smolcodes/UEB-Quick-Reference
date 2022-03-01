@@ -1,5 +1,5 @@
 ---
-title: 'a'
+title: '⠁'
 description: 'a'
 order: 1
 tags:
@@ -12,6 +12,6 @@ tags:
 
 *a dark day*
 ::: braille
-a dark day
+⠁⠀⠙⠁⠗⠅⠀⠙⠁⠽
 :::
 
